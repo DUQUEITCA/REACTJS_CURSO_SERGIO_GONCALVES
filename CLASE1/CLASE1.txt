@@ -1,0 +1,160 @@
+
+duque@Laptop_Aaron MINGW64 ~
+$ pwd
+/c/Users/duque
+
+duque@Laptop_Aaron MINGW64 ~
+$ cd ..
+
+duque@Laptop_Aaron MINGW64 /c/Users
+$ cd ..
+
+duque@Laptop_Aaron MINGW64 /c
+$ pwd
+/c
+
+duque@Laptop_Aaron MINGW64 /c
+$ cd reactjs_curso_sergio_goncalves
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves
+$ ls
+
+INICIALIZACIÓN DEL PROYECTO
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves
+$ git init
+Initialized empty Git repository in C:/REACTJS_CURSO_SERGIO_GONCALVES/.git/
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (master)
+$ ls
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (master)
+$ pwd
+/c/reactjs_curso_sergio_goncalves
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (master)
+$
+
+--- 1 ---
+…or create a new repository on the command line
+echo "# REACTJS_CURSO_SERGIO_GONCALVES" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/DUQUEITCA/REACTJS_CURSO_SERGIO_GONCALVES.git
+git push -u origin main
+
+
+--- 2 ---
+…or push an existing repository from the command line
+git remote add origin https://github.com/DUQUEITCA/REACTJS_CURSO_SERGIO_GONCALVES.git
+git branch -M main
+git push -u origin main
+
+
+********************************************************************
+
+
+
+duque@Laptop_Aaron MINGW64 ~
+$ pwd
+/c/Users/duque
+
+duque@Laptop_Aaron MINGW64 ~
+$ cd ..
+
+duque@Laptop_Aaron MINGW64 /c/Users
+$ cd ..
+
+duque@Laptop_Aaron MINGW64 /c
+$ pwd
+/c
+
+duque@Laptop_Aaron MINGW64 /c
+$ cd reactjs_curso_sergio_goncalves
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves
+$ ls
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves
+$ git init
+Initialized empty Git repository in C:/REACTJS_CURSO_SERGIO_GONCALVES/.git/
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (master)
+$ ls
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (master)
+$ pwd
+/c/reactjs_curso_sergio_goncalves
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (master)
+$ echo "# REACTJS_CURSO_SERGIO_GONCALVES" >> README.md
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (master)
+$ git init
+Reinitialized existing Git repository in C:/REACTJS_CURSO_SERGIO_GONCALVES/.git/
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (master)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (master)
+$ git commit -m "1er. commit para repositorio del curso"
+[master (root-commit) 77dd50f] 1er. commit para repositorio del curso
+ 2 files changed, 53 insertions(+)
+ create mode 100644 CLASE1.txt
+ create mode 100644 README.md
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (master)
+$ git branch -M main
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (main)
+$ git remote add origin https://github.com/DUQUEITCA/REACTJS_CURSO_SERGIO_GONCALVES.git
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 717 bytes | 239.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DUQUEITCA/REACTJS_CURSO_SERGIO_GONCALVES.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   CLASE1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (main)
+$ git restore CLASE1.txt
+
+duque@Laptop_Aaron MINGW64 /c/reactjs_curso_sergio_goncalves (main)
+$
+
+
+UBICACIÓN DE LA LIBRERÍA DE REACTJS 
+https://legacy.reactjs.org/docs/cdn-links.html
+
+
+SIN INSTALAR EL PROYECTO:
+
+https://unpkg.com/react@15.3.2/dist/react.js
+https://unpkg.com/react-dom@15.3.2/dist/react-dom.js
+https://unpkg.com/babel-core@5.8.38/browser.min.js
+
+
+
+
+
+
+

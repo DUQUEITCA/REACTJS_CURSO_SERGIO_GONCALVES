@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./libreria/react.js"></script>
+    <script src="./libreria/react-dom.js"></script>
+    <script src="./libreria/browser.min.js"></script>
+    <script></script>    
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejemplo 01 - Librerías standalone de ReactJS</h1>
+    <div id="salida"></div>
+    <script type="text/babel">
+        // JSX
+        // Declaración del 1er componente
+
+        var MiComponenteA = React.createClass({
+            render:function(){
+                return(
+                    <div>
+                        <h2>Contenido de mi componente A</h2>
+                        <p>Esto corresponde a la funcionalidad del componente A.</p>
+                    </div>
+                );
+            }
+        });
+
+        // Declaración del 1er componente
+        var MiComponenteB = React.createClass({
+            render:function(){
+                return(
+                    <div>
+                        <h2>Contenido de mi componente B</h2>
+                        <p>Esto corresponde a la funcionalidad del componente B</p>
+                    </div>
+                );
+            }
+        })
+
+        // Mostrar en el DOM
+
+        ReactDOM.render(
+            <div>
+                <MiComponenteA />
+                <MiComponenteB />
+            </div>, salida
+        );
+
+        /*
+        var contenido = <h1>Esta es otra forma de acceder al contenido</h1>;
+        var resultado = document.getElementById('salida');
+        ReactDOM.render(contenido, resultado);
+        */
+        /*
+        class App extends React.Component{
+            render(){
+                return <h1>Clase 1 curso de ReactJS - Sergio Goncalves</h1>
+            }
+        }
+        ReactDOM.render(<App/>, document.getElementById('root'));
+        */
+    </script>
+</body>
+</html>

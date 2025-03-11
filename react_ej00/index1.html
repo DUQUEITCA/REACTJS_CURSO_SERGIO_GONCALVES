@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./libreria/react.js"></script>
+    <script src="./libreria/react-dom.js"></script>
+    <script src="./libreria/browser.min.js"></script>
+    <script></script>    
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejemplo 00 - Librerías standalone de ReactJS</h1>
+    <div id="root"></div>
+    <script type="text/babel">
+        class App extends React.Component{
+            render(){
+                return <h1>Clase 1 curso de ReactJS - Sergio Goncalves</h1>
+            }
+        }
+        ReactDOM.render(<App/>, document.getElementById('root'));
+    </script>
+</body>
+</html>
