@@ -1,0 +1,40 @@
+MARCOS DE DESARROLLO PARA INTERFACES DE USUARIO
+1-REACT JS (WEB) / REACT NATIVE (MOVILES)
+2-ANGULAR JS
+3-VUE JS
+
+
+REACT JS: SE BASA EN COMPONENTES, QUE COMBINA HTML+CSS+JS, 
+MEDIANTE UNA NOTACIÓN QUE SE LLAMA JSX (JS + XMLn)
+
++---- NAVEGADOR WEB -----+
+  (INTERPRETAN:
+   HTML,CSS,JS,XML,JSON)  
+                           <---------------+
+      (VISTA)                              |  
+                                           | 
++-------------------------+                |
+                                           V
+
+                                     +--- SERVIDOR ----+
+                
+                                       (CONTROLADORES)
+
+                                     +-----------------+
+                                              ^
+                                              |
+                                              V 
+                                     +-----------------+          
+                                        BASE DE DATOS
+                                      (MODELO DE DATOS)
+                                       SQL / NOSQL
+                                     +-----------------+
+
+
+
+AJAX:
+
+ASYNCHRONUS JAVASCRIPT AND XML 
+ES UNA TÉCNICA QUE PERMITE ENVIAR Y RECIBIR INFORMACIÓN A UN SERVIDOR O
+DESDE UN SERVIDOR, EMPLEANDO PARA EL INTERCAMBIO DE DATOS JS O XML. 
+

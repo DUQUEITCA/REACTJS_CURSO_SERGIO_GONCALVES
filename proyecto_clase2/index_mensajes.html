@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Proyecto clase 2</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Proyecto clase 2</h1>
+        <form id="datosPersonales">
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese el nombre">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Ingrese el apellido">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="">Teléfono</label>
+                    <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Ingrese el teléfono">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="">Correo electrónico</label>
+                    <input type="email" name="correo" id="correo" class="form-control" placeholder="Ingrese el correo electrónico">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script>
+        // Verificar a través de jQuery, que el documento html, haya
+        // cargado en el navegador
+        $(document).ready(function(){
+            // Se detecta que se haya oprimido el botón de tipo 'submit'
+            $('#datosPersonales').on('submit',function(event){
+                // Se evita que el formulario se envíe en el proceso de actualización de la página
+                event.preventDefault(); 
+                // Se declaran e inicializan variables con los datos cargados en el formulario
+                var nom = $('#nombre').val();
+                var ape = $('#apellido').val();
+                var cor = $('#correo').val();
+                var tel = $('#telefono').val();
+                // Ajax de jQuery
+                $.ajax({
+                    url:'/api/procesarDatosPersonales', // ruta a resolver en NodeJS
+                    type:'POST',
+                    contentType:'application/json',
+                    data:JSON.stringify({'nombre':nom,'apellido':ape,'correo':cor,'telefono':tel}),
+                    success:function(response){
+                        alert('Respuesta que se obtuvo desde el servidor:' + response);
+                    },
+                    error:function(xhr, status, error){
+                        alert('Error recibido desde el servidor:' + error);
+                    }
+                })
+            })
+        }) 
+
+
+    </script>
+</body>
+</html>
